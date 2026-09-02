@@ -101,7 +101,7 @@ jobs:
           forbidden = ['BFGVCVHS9F6A', "owner_preview=BFGVCVHS9F6A"]
           offenders = []
           for p in Path('.').rglob('*'):
-              if not p.is_file() or '.git' in p.parts or p.suffix.lower() in {'.zip','.png','.jpg','.jpeg','.wav','.mp4','.pdf'}:
+              if not p.is_file() or '.git' in p.parts or '.github' in p.parts or p.suffix.lower() in {'.zip','.png','.jpg','.jpeg','.wav','.mp4','.pdf'}:
                   continue
               try:
                   text = p.read_text(encoding='utf-8')
