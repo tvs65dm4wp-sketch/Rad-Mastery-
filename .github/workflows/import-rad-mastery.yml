@@ -7,6 +7,7 @@ on:
       - 'Rad_Mastery*.zip'
       - 'rad-mastery*.zip'
       - 'rad_mastery*.zip'
+      - '.github/workflows/import-rad-mastery.yml'
 
 permissions:
   contents: write
@@ -27,24 +28,27 @@ jobs:
           set -euo pipefail
           ZIP="$(find . -maxdepth 1 -type f \( -iname 'Rad_Mastery*.zip' -o -iname 'rad-mastery*.zip' -o -iname 'rad_mastery*.zip' \) -print -quit)"
           if [ -z "$ZIP" ]; then
-            echo 'No Rad Mastery ZIP found.' >&2
-            exit 1
+            echo 'No Rad Mastery ZIP found; nothing to import.'
+            echo 'found=false' >> "$GITHUB_OUTPUT"
+            exit 0
           fi
+          echo 'found=true' >> "$GITHUB_OUTPUT"
           echo "path=$ZIP" >> "$GITHUB_OUTPUT"
 
       - name: Extract project into repository root
+        if: steps.zip.outputs.found == 'true'
         shell: bash
         run: |
           set -euo pipefail
           ZIP='${{ steps.zip.outputs.path }}'
-          rm -rf .rad-import
-          mkdir .rad-import
-          unzip -q "$ZIP" -d .rad-import
+          IMPORT_DIR="$(mktemp -d)"
+          trap 'rm -rf "$IMPORT_DIR"' EXIT
+          unzip -q "$ZIP" -d "$IMPORT_DIR"
 
-          SRC='.rad-import'
-          FIRST="$(find .rad-import -mindepth 1 -maxdepth 1 -type d -print -quit || true)"
-          FILES_AT_ROOT="$(find .rad-import -mindepth 1 -maxdepth 1 -type f -print -quit || true)"
-          DIR_COUNT="$(find .rad-import -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')"
+          SRC="$IMPORT_DIR"
+          FIRST="$(find "$IMPORT_DIR" -mindepth 1 -maxdepth 1 -type d -print -quit || true)"
+          FILES_AT_ROOT="$(find "$IMPORT_DIR" -mindepth 1 -maxdepth 1 -type f -print -quit || true)"
+          DIR_COUNT="$(find "$IMPORT_DIR" -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')"
           if [ -z "$FILES_AT_ROOT" ] && [ "$DIR_COUNT" = '1' ] && [ -n "$FIRST" ]; then
             SRC="$FIRST"
           fi
@@ -55,15 +59,68 @@ jobs:
             --exclude '*.zip' \
             "$SRC"/ ./
 
-          rm -rf .rad-import
           rm -f "$ZIP"
 
+      - name: Remove insecure owner-preview bypass
+        if: steps.zip.outputs.found == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          replacements = {
+              'access.js': [
+                  ("const params=new URLSearchParams(window.location.search);\nif(params.get('owner_preview')==='BFGVCVHS9F6A'){\n  localStorage.setItem('radMasteryOwnerPreview','true');\n  localStorage.setItem('radMasteryOwnerPreviewBuild','V16-test');\n  history.replaceState({},document.title,window.location.pathname);\n}\n", ''),
+                  ("const owner=localStorage.getItem('radMasteryOwnerPreview')==='true';\n", ''),
+                  ("level==='owner'?'Owner preview':level==='lifetime'?'Lifetime access':level==='monthly'?'Monthly member':'Member'", "level==='lifetime'?'Lifetime access':level==='monthly'?'Monthly member':'Member'"),
+                  ("    if(owner){await unlock('owner',null);return;}\n", ''),
+                  ("if(!['monthly','lifetime','owner'].includes(level))", "if(!['monthly','lifetime'].includes(level))"),
+              ],
+              'cloud.js': [
+                  ("    if (localStorage.getItem('radMasteryOwnerPreview') === 'true') return 'owner';\n", ''),
+              ],
+              'checkout.js': [
+                  ("if(localStorage.getItem('radMasteryOwnerPreview')==='true'){\n  document.querySelectorAll('[data-secure-checkout]').forEach(b=>b.addEventListener('click',e=>{\n    e.preventDefault();\n    alert('Owner Preview is active. No payment will be processed. Exit preview mode to test Stripe sandbox checkout.');\n  },{capture:true}));\n}\n", ''),
+                  ("    if(localStorage.getItem('radMasteryOwnerPreview')==='true') return;\n", ''),
+              ],
+          }
+
+          for filename, reps in replacements.items():
+              p = Path(filename)
+              if not p.exists():
+                  continue
+              text = p.read_text(encoding='utf-8')
+              for old, new in reps:
+                  text = text.replace(old, new)
+              p.write_text(text, encoding='utf-8')
+
+          Path('owner-preview.js').write_text('// Owner preview bypass removed for production security.\n', encoding='utf-8')
+          Path('test-access.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0; url=auth.html"><title>Rad Mastery</title></head><body><p>Redirecting to secure sign in…</p></body></html>\n', encoding='utf-8')
+
+          forbidden = ['BFGVCVHS9F6A', "owner_preview=BFGVCVHS9F6A"]
+          offenders = []
+          for p in Path('.').rglob('*'):
+              if not p.is_file() or '.git' in p.parts or p.suffix.lower() in {'.zip','.png','.jpg','.jpeg','.wav','.mp4','.pdf'}:
+                  continue
+              try:
+                  text = p.read_text(encoding='utf-8')
+              except Exception:
+                  continue
+              if any(token in text for token in forbidden):
+                  offenders.append(str(p))
+          if offenders:
+              raise SystemExit('Production security check failed; owner preview code remains in: ' + ', '.join(offenders))
+          PY
+
       - name: Keep deployment workflow
+        if: steps.zip.outputs.found == 'true'
         shell: bash
         run: |
           git checkout HEAD -- .github/workflows/import-rad-mastery.yml || true
 
       - name: Commit imported project
+        if: steps.zip.outputs.found == 'true'
         shell: bash
         run: |
           set -euo pipefail
