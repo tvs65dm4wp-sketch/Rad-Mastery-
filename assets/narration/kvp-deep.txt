@@ -1,0 +1,21 @@
+kVp is one of the most important controls in radiography, but it is often memorized too simply. In this lesson, we are going to connect kVp to what actually happens inside the tube, what happens to the X-ray beam, and what you see clinically.
+
+kVp stands for kilovoltage peak. It controls the maximum electrical potential difference between the cathode and the anode during the exposure. The cathode is negative and the anode is positive. When the exposure begins, electrons are accelerated across that potential difference.
+
+If you increase kVp, you increase the maximum kinetic energy those electrons can gain before they hit the tungsten target. More energetic projectile electrons can produce more energetic X-ray photons. That is why kVp is strongly associated with beam quality, meaning the energy and penetrating ability of the X-ray beam.
+
+But kVp also affects quantity. Higher-energy electrons can produce X-rays more efficiently, so increasing kVp generally increases the number of photons as well as their average energy.
+
+Now connect this to the patient. A more penetrating beam can pass through thicker or denser anatomy more effectively. If kVp is too low, many photons may be absorbed before reaching the detector, and the image can show inadequate penetration or excessive noise. If kVp is too high, more scatter can be produced and subject contrast can be reduced.
+
+In digital imaging, one major trap is relying on displayed brightness. Digital processing can rescale an image, so an overexposed image may still look normally bright. That is why you need to evaluate the exposure indicator, image noise, collimation, anatomy, and the clinical purpose of the exam rather than judging technique by brightness alone.
+
+The fifteen percent rule is a classic technique relationship. Increasing kVp by about fifteen percent approximately doubles receptor exposure, assuming other factors remain constant. To maintain similar receptor exposure, mAs can be reduced by about half. The reverse is also used: decreasing kVp by about fifteen percent can be compensated by doubling mAs.
+
+This rule is useful, but do not treat it as magic. It is an approximation and clinical technique depends on body part, detector system, patient size, grid use, and department protocol.
+
+Dose connection: raising kVp while appropriately reducing mAs can sometimes reduce patient dose because fewer photons are needed, but technique optimization is more complex than simply increasing kVp. The goal is adequate image quality at the lowest reasonable exposure.
+
+Registry trap: kVp primarily affects beam energy and penetration. mAs primarily affects photon quantity. Both can influence receptor exposure and patient dose, but for different physical reasons.
+
+Make it click: kVp controls how hard the electrons are pushed across the tube. More push means more electron kinetic energy, which produces a higher-energy, more penetrating X-ray beam.

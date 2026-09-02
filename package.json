@@ -1,0 +1,9 @@
+{
+  "name": "radiography-registry-mastery",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0",
+    "stripe": "^18.0.0"
+  }
+}

@@ -1,0 +1,1 @@
+Atoms contain protons and neutrons in the nucleus, with electrons arranged in shells around it. Ionization means an electron is completely removed. Excitation means an electron moves to a higher energy level but stays in the atom. Inner-shell vacancies are especially important because they can lead to characteristic x-ray production.

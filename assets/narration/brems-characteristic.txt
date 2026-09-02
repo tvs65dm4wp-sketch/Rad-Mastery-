@@ -1,0 +1,21 @@
+In this lesson, we are going to compare the two major ways diagnostic X-rays are produced at the anode: Bremsstrahlung radiation and characteristic radiation.
+
+Picture a high-speed electron arriving at the tungsten target. It has already been accelerated across the tube by the potential difference created by kVp. When it reaches the target, it interacts with tungsten atoms. Most of its kinetic energy becomes heat. Only a small fraction becomes X-ray photons.
+
+Bremsstrahlung means braking radiation. Imagine the incoming electron passing close to the positively charged nucleus of a tungsten atom. Because the incoming electron is negative and the nucleus is positive, the electron is attracted toward the nucleus. Its path bends, and it slows down. Whenever the electron loses kinetic energy, that lost energy can be released as an X-ray photon.
+
+The closer the electron passes to the nucleus, the stronger the interaction can be and the more energy it can lose. That means Bremsstrahlung photons can have many different energies. This is why Bremsstrahlung creates a continuous spectrum rather than one single photon energy.
+
+Characteristic radiation is different. Here, the incoming electron collides with an inner-shell electron in the tungsten atom. If the incoming electron has enough energy to overcome the binding energy of that shell, it ejects the inner-shell electron and leaves a vacancy.
+
+The atom is now unstable. An electron from a higher-energy shell drops down to fill the vacancy. When it drops to the lower shell, the difference in binding energy is released as an X-ray photon. Because electron binding energies are specific to the target element, the photon energy is characteristic of tungsten. That is where the name comes from.
+
+For diagnostic radiography, tungsten is useful because it has a high atomic number and a high melting point. The high atomic number improves the efficiency of X-ray production, while the high melting point helps the target tolerate the intense heat created during exposures.
+
+Registry connection: Bremsstrahlung usually makes up most of the diagnostic X-ray spectrum. Characteristic photons appear at specific energies only when the incoming electron has enough energy to eject the appropriate inner-shell electron.
+
+Common mistake: do not say characteristic radiation happens because the projectile electron slows near the nucleus. That is Bremsstrahlung. Characteristic radiation requires an inner-shell vacancy followed by an electron transition.
+
+Clinical connection: when kVp increases, projectile electrons can arrive with more kinetic energy. That can increase both the maximum photon energy and the efficiency of X-ray production. But the physical mechanisms are still the same: braking near the nucleus and shell-to-shell transitions.
+
+Make it click: Bremsstrahlung is a change in speed and direction near the nucleus. Characteristic radiation is a change in electron shells inside the atom. One creates a range of energies. The other creates specific energies.

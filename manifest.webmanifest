@@ -1,0 +1,15 @@
+{
+  "name": "Rad Mastery \u2014 The 1%",
+  "short_name": "Rad Mastery",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#08090a",
+  "theme_color": "#d59f3a",
+  "icons": [
+    {
+      "src": "assets/rad-mastery-v10-icon.jpg",
+      "sizes": "any",
+      "type": "image/jpeg"
+    }
+  ]
+}

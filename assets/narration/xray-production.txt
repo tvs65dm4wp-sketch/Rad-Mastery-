@@ -1,0 +1,1 @@
+X-rays are produced when fast electrons from the cathode strike the tungsten target. Bremsstrahlung occurs when an electron is slowed or deflected near the nucleus. Characteristic radiation begins when an incoming electron removes an inner-shell electron, and a higher-shell electron fills the vacancy, releasing a photon.

@@ -1,0 +1,23 @@
+The inverse square law is one of the most useful radiation safety concepts because it explains why even a small increase in distance can dramatically reduce exposure.
+
+The law describes how radiation intensity changes as distance from a point source changes. Radiation spreads out as it travels. Imagine the same number of photons spreading over the surface of a larger and larger sphere. As the radius of that sphere increases, its surface area increases with the square of the distance.
+
+That is why intensity is inversely proportional to distance squared.
+
+Here is the practical relationship: intensity one divided by intensity two equals distance two squared divided by distance one squared.
+
+But you do not have to memorize it as a random fraction. Start with the idea that doubling your distance does not cut exposure in half. It reduces exposure to one fourth. Tripling your distance reduces exposure to one ninth.
+
+For example, imagine a technologist receives a scatter exposure rate of 4 milligray per hour at one meter from a source. If the technologist moves to two meters, the new exposure rate is 1 milligray per hour. The distance doubled, so intensity became one fourth.
+
+Now try three meters. Relative to one meter, distance increased by a factor of three. Three squared is nine, so intensity becomes one ninth of the original.
+
+This is why distance is such a powerful occupational protection tool during portable radiography and fluoroscopy. If you can safely take even a few steps away from the source and patient, your exposure can drop substantially.
+
+Clinical connection: during a mobile exposure, maximize distance from the patient and X-ray source while maintaining control of the equipment and patient safety. During fluoroscopy, use distance together with shielding and good C-arm geometry.
+
+Common mistake: the inverse square law works best for a point source in free space. Real clinical environments include scatter, shielding, and complex geometry, so measured exposure may not be perfectly ideal. But the principle remains extremely valuable.
+
+Registry trap: if distance doubles, intensity becomes one fourth, not one half. If distance is cut in half, intensity becomes four times greater.
+
+Make it click: distance changes in a straight line, but intensity changes with the square. That is why stepping farther away is more powerful than it first seems.

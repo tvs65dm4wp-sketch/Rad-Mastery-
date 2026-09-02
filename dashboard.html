@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Student Dashboard | Rad Mastery — The 1%</title>
+<link href="manifest.webmanifest" rel="manifest"/><link href="styles.css" rel="stylesheet"/><link href="premium.css" rel="stylesheet"/>
+</head>
+<body class="dashboard-body access-pending v21-test-build"><div class="v19-test-banner" role="status" aria-label="V26 owner test preview">V26 FULL COURSE PREVIEW <span>OWNER REVIEW BUILD</span></div><div id="accessGate" class="access-gate" hidden></div><a class="skip-link" href="#dashboardMain">Skip to dashboard content</a>
+<aside class="sidebar" id="sidebar">
+<a class="brand sidebar-brand v10-sidebar-brand" href="index.html"><img alt="Rad Mastery logo" src="assets/rad-mastery-v10-icon.jpg"/><span><strong>RAD MASTERY</strong><small>THE 1%</small></span></a>
+<nav class="side-nav">
+<button class="side-link active" data-view="overview">▦ <span>Overview</span></button>
+<button class="side-link" data-view="lessons">▤ <span>Lessons</span></button>
+<button class="side-link" data-view="questions">✓ <span>Question Bank</span></button>
+<button class="side-link" data-view="anatomy">⌖ <span>Anatomy Lab</span></button>
+<button class="side-link" data-view="flashcards">◫ <span>Flashcards</span></button>
+<button class="side-link" data-view="exam">◷ <span>Mock Exam</span></button>
+<button class="side-link" data-view="downloads">⇩ <span>Downloads</span></button>
+
+
+<button class="side-link" data-view="noteshelp">▱ <span>Notes Help</span></button>
+<button class="side-link" data-view="tips">✦ <span>Tips &amp; Tricks</span></button>
+<button class="side-link" data-view="forum">◌ <span>Community Forum</span></button>
+</nav>
+<div class="sidebar-bottom"><button class="side-link" id="signOutButton">↪ <span>Sign Out</span></button>
+<button class="side-link" id="dashboardTheme">◐ <span>Dark Mode</span></button>
+<a class="side-link" href="index.html">← <span>Back to Website</span></a>
+</div>
+</aside>
+<main class="dashboard-main" id="dashboardMain"><div class="owner-preview-banner" hidden="" id="ownerPreviewBanner"><div><strong>OWNER FULL PREVIEW</strong><span>All learning features are unlocked on this browser. Payments are disabled for this preview session.</span></div><button class="text-btn" id="exitOwnerPreview">Exit Preview</button></div>
+<header class="dashboard-header">
+<button aria-label="Open dashboard menu" class="icon-btn menu-btn" id="menuToggle">☰</button>
+<div>
+<small>Rad Mastery — The 1%</small>
+<h1 id="viewTitle">Overview</h1>
+</div>
+<div class="profile">
+<div class="profile-avatar">PM</div>
+<div><strong>Student</strong><span>Free plan</span></div>
+</div>
+</header>
+<section class="dashboard-view active" id="overviewView">
+<div class="welcome-card">
+<div>
+<span class="premium-label">Radiography learning</span>
+<p class="eyebrow">Continue learning</p>
+<h2>Welcome back. Let’s keep building momentum.</h2>
+<p>Your next lesson is <strong>How X-Rays Are Produced</strong>.</p>
+<button class="btn jump-view" data-target="lessons">Continue Lesson</button>
+</div>
+<div class="progress-ring large" id="overallRing" style="--progress:32">
+<div><strong id="overallPercent">32%</strong><span>Course progress</span></div>
+</div>
+</div>
+<div class="dashboard-stats">
+<article><span class="stat-code">ST</span><div><strong id="streakCount">6 days</strong><small>Study streak</small></div></article>
+<article><span class="stat-code">Q</span><div><strong id="answeredCount">12</strong><small>Questions answered</small></div></article>
+<article><span class="stat-code">%</span><div><strong id="averageScore">83%</strong><small>Average score</small></div></article>
+<article><span class="stat-code">T</span><div><strong>2h 18m</strong><small>Study time</small></div></article>
+</div>
+<div class="exam-countdown panel"><div><small>BOARD EXAM COUNTDOWN</small><h3 id="boardCountdown">Set your board exam date</h3><p>Keep the target visible every time you study.</p></div><div><label>Exam date <input id="boardDate" type="date"></label><button class="btn btn-secondary" id="saveBoardDate" type="button">Save exam date</button></div></div><div class="panel v26-daily"><div class="panel-header"><div><small>DAILY CHALLENGE</small><h3>10 challenging questions</h3><p>Protect your streak and build your weak areas.</p></div><div><strong id="dailyScore">0/10</strong><small>Today · streak <span id="dailyStreak">0</span></small></div></div><div class="v26-daily-actions"><button class="btn" id="startDailyChallenge" type="button">Start today’s challenge</button><button class="btn btn-secondary" id="enableReminder" type="button">Enable study reminder</button></div><div id="dailyChallengePanel" class="panel compact" hidden></div></div>
+<div class="dashboard-grid">
+<article class="panel">
+<div class="panel-header"><div><small>Weekly activity</small><h3>Study consistency</h3></div></div>
+<div class="activity-chart">
+<div><i style="height:35%"></i><span>M</span></div>
+<div><i style="height:65%"></i><span>T</span></div>
+<div><i style="height:48%"></i><span>W</span></div>
+<div><i style="height:88%"></i><span>T</span></div>
+<div><i style="height:72%"></i><span>F</span></div>
+<div><i style="height:40%"></i><span>S</span></div>
+<div><i style="height:56%"></i><span>S</span></div>
+</div>
+</article>
+<article class="panel">
+<div class="panel-header"><div><small>Weak topics</small><h3>Recommended review</h3></div></div>
+<div class="topic-row"><span>Digital imaging artifacts</span><strong>48%</strong><div><i style="width:48%"></i></div></div>
+<div class="topic-row"><span>Grid cutoff</span><strong>59%</strong><div><i style="width:59%"></i></div></div>
+<div class="topic-row"><span>Fluoroscopy safety</span><strong>66%</strong><div><i style="width:66%"></i></div></div>
+</article>
+</div>
+<article class="panel dashboard-clinical-panel" id="anatomyPanel">
+<div class="panel-header"><div><small>Clinical image review</small><h3>Radiographic anatomy</h3></div><button class="text-btn" id="openAnatomyLab">Study anatomy →</button></div>
+<div class="dashboard-clinical-strip">
+<figure><img alt="Chest radiograph" src="assets/verified_real/chest-pa-cc0.jpg"/><figcaption>Chest</figcaption></figure>
+<figure><img alt="Hand radiograph" src="assets/verified_real/hand-pa-cc0.jpg"/><figcaption>Hand</figcaption></figure>
+<figure><img alt="Knee radiograph" src="assets/verified_real/knee-ap-cc0.jpg"/><figcaption>Knee</figcaption></figure>
+<figure><img alt="Pelvis radiograph" src="assets/verified_real/pelvis-ap-public-domain.jpg"/><figcaption>Pelvis (pediatric)</figcaption></figure>
+<figure><img alt="Shoulder radiograph" src="assets/verified_real/shoulder-y-cc0.jpg"/><figcaption>Shoulder Y</figcaption></figure>
+</div>
+</article><div id="anatomyLab" class="anatomy-lab" hidden></div>
+<article class="panel">
+<div class="panel-header">
+<div><small>Course roadmap</small><h3>Your modules</h3></div>
+<button class="text-btn jump-view" data-target="lessons">View all lessons →</button>
+</div>
+<div class="module-progress-list" id="overviewModules"></div>
+</article>
+</section>
+<section class="dashboard-view" id="lessonsView">
+<div class="content-toolbar">
+<div>
+<p class="eyebrow">Guided learning path</p>
+<h2>Lessons</h2>
+<p>Learn one concept at a time. Each guided lesson is built around a short explanation, a visual animation, clinical context, and a five-question mastery check.</p>
+</div>
+<div class="search-box"><input id="lessonSearch" placeholder="Search subjects or concepts" type="search"/></div>
+</div>
+<div class="study-method-strip" aria-label="Rad Mastery study sequence"><span><b>1</b> Choose a category</span><span><b>2</b> Watch + visualize</span><span><b>3</b> Read the deep dive</span><span><b>4</b> Take 5 questions</span><span><b>5</b> Review weak points</span></div>
+<div class="lesson-layout">
+<div class="lesson-list" id="lessonList"></div>
+<article class="lesson-reader" id="lessonReader">
+<p class="eyebrow">Select a lesson</p>
+<h2>Choose a lesson from the list</h2>
+<p>Your progress will be stored in this browser.</p>
+</article>
+</div>
+</section>
+<section class="dashboard-view" id="anatomyView">
+<div class="content-toolbar"><div><p class="eyebrow">Interactive radiographic anatomy</p><h2>Anatomy Lab</h2><p>Learn structures on real radiographs, identify anatomy, label images, critique positioning, and complete timed anatomy challenges.</p></div><div class="anatomy-summary"><strong id="anatomyMastery">0%</strong><span>anatomy mastery</span></div></div>
+<div class="anatomy-category-bar" id="anatomyCategories"></div>
+<div class="anatomy-mode-bar" id="anatomyModes"><button class="btn btn-secondary active" data-anatomy-mode="learn">Learn</button><button class="btn btn-secondary" data-anatomy-mode="identify">Identify</button><button class="btn btn-secondary" data-anatomy-mode="label">Label</button><button class="btn btn-secondary" data-anatomy-mode="critique">Image Critique</button><button class="btn" data-anatomy-mode="challenge">Challenge</button></div>
+<div class="anatomy-workbench" id="anatomyWorkbench"></div>
+</section>
+<section class="dashboard-view" id="questionsView">
+<div class="content-toolbar">
+<div><p class="eyebrow">Practice</p><h2>Question Bank</h2></div>
+<div class="filter-row">
+<select id="questionCategory"><option value="all">All categories</option></select>
+<select id="questionMode">
+<option value="all">All questions</option>
+<option value="bookmarked">Bookmarked</option>
+<option value="missed">Missed</option>
+</select>
+</div>
+</div>
+<div class="question-bank-layout">
+<article class="quiz-card question-bank-card">
+<div class="quiz-progress"><span id="bankCounter"></span><div><i id="bankProgress"></i></div></div>
+<div class="question-tags"><span id="bankCategory"></span><button class="icon-btn" id="bookmarkQuestion">☆</button></div>
+<h3 id="bankQuestion"></h3>
+<div class="answer-list" id="bankAnswers"></div>
+<div class="quiz-feedback" id="bankFeedback"></div>
+<div class="quiz-actions">
+<button class="btn btn-secondary" id="previousBank">Previous</button>
+<button class="btn" id="nextBank">Next</button>
+</div>
+</article>
+<aside class="panel compact">
+<small>Session performance</small>
+<h3 id="sessionScore">0 correct</h3>
+<p id="sessionDetail">Answer questions to begin tracking this session.</p>
+<button class="text-btn" id="resetBank">Reset session</button>
+</aside>
+</div>
+</section>
+<section class="dashboard-view" id="flashcardsView">
+<div class="content-toolbar">
+<div><p class="eyebrow">Rapid review</p><h2>Flashcards</h2></div>
+<select id="flashcardCategory"><option value="all">All categories</option></select>
+</div>
+<div class="flashcard-stage">
+<button class="flashcard" id="flashcard">
+<span id="flashLabel">Question</span>
+<strong id="flashText"></strong>
+<small>Tap to reveal</small>
+</button>
+<div class="flash-controls"><button class="btn btn-secondary" id="flashPrev">Previous</button><span id="flashCounter"></span><button class="btn" id="flashNext">Next</button></div><div class="flash-study-controls"><button class="btn btn-secondary" id="flashStudy">Study again</button><button class="btn" id="flashKnow">Know it</button><button class="text-btn" id="flashShuffle">Shuffle</button><button class="text-btn" id="flashChallenge">Challenge mode</button></div><p id="flashBuckets" class="microcopy"></p><div id="flashChallengePanel" class="panel compact" hidden></div>
+</div>
+</section>
+<section class="dashboard-view" id="examView">
+<div class="exam-intro panel" id="examIntro">
+<p class="eyebrow">Timed practice</p>
+<h2>200-Question Registry Mock Exam</h2>
+<p>A full-length 150-minute exam. A score of 75% or higher is marked passing. After submission, missed questions are grouped into a remediation plan.</p>
+<div class="exam-points">
+<span>200 questions</span><span>150 minutes</span><span>75% pass</span>
+</div>
+<button class="btn" id="startExam">Start Exam</button>
+</div>
+<article class="quiz-card exam-card" hidden="" id="examCard">
+<div class="exam-top"><strong id="examTimer">150:00</strong><span id="examCounter"></span></div>
+<h3 id="examQuestion"></h3>
+<div class="answer-list" id="examAnswers"></div>
+<div class="quiz-actions">
+<button class="btn btn-secondary" id="examPrevious">Previous</button>
+<button class="btn" id="examNext">Next</button>
+</div>
+</article>
+<article class="panel" hidden="" id="examResults"></article>
+</section>
+<section class="dashboard-view" id="downloadsView">
+<div class="content-toolbar">
+<div><p class="eyebrow">Study resources</p><h2>Downloads</h2></div>
+</div>
+<div class="download-grid">
+<article class="download-card"><span>PDF</span><h3>Volume 1 Study Guide</h3><p>Physics and image production review guide.</p><a class="btn btn-secondary" download="" href="resources/Chapter_1_Study_Guide_Preview.pdf">Download</a></article>
+<article class="download-card"><span>PDF</span><h3>Physics Formula Sheet</h3><p>High-yield equations and exposure relationships.</p><a class="btn btn-secondary" download="" href="resources/Radiography_Physics_Quick_Reference.pdf">Download</a></article>
+<article class="download-card"><span>PDF</span><h3>30-Day Study Planner</h3><p>A structured daily review schedule.</p><a class="btn btn-secondary" download="" href="resources/30_Day_Radiography_Study_Planner.pdf">Download</a></article>
+<article class="download-card"><span>CSV</span><h3>Flashcard Export</h3><p>Importable study cards for compatible apps.</p><a class="btn btn-secondary" download="" href="resources/Radiography_Flashcards.csv">Download</a></article>
+</div>
+</section>
+
+<section class="dashboard-view" id="noteshelpView">
+<div class="content-toolbar"><div><p class="eyebrow">Ask for help</p><h2>Notes Help</h2><p>Upload your own study notes or homework and ask the community for clarification.</p></div></div>
+<div class="phi-warning"><strong>Privacy rule:</strong> Never upload patient images, clinical radiographs, names, DOBs, MRNs, facility identifiers, or other PHI. Notes and homework only.</div>
+<div class="community-layout">
+<form class="panel community-compose" id="notesHelpForm">
+<h3>Post notes or homework</h3>
+<label>Title<input id="notesTitle" maxlength="180" placeholder="What do you need help understanding?" required=""/></label>
+<label>Your question<textarea id="notesBody" maxlength="5000" placeholder="Explain what is confusing or what you want checked." required="" rows="5"></textarea></label>
+<label class="upload-drop" for="notesFile"><span>UPLOAD</span><strong>Add image or PDF</strong><small>JPG, PNG, WEBP, PDF · 10 MB max</small><input accept="image/jpeg,image/png,image/webp,application/pdf,.pdf" hidden="" id="notesFile" type="file"/></label>
+<div class="microcopy" id="notesFileName"></div>
+<label class="confirm-row"><input id="notesPhiConfirm" required="" type="checkbox"/> <span>I confirm this upload contains no patient information or clinical-site identifiers.</span></label>
+<button class="btn" type="submit">Post for Help</button><p class="form-message" id="notesHelpMessage" role="status"></p>
+</form>
+<div><div class="community-filter"><strong>Notes Help threads</strong><button class="text-btn" data-refresh-feed="notes-help">Refresh</button></div><div class="community-feed" id="notesHelpFeed"></div></div>
+</div>
+</section><section class="dashboard-view" id="tipsView">
+<div class="content-toolbar"><div><p class="eyebrow">High-value shortcuts</p><h2>Tips &amp; Tricks</h2><p>Study methods, positioning reminders, physics mnemonics, clinical workflow tips, and registry strategy.</p></div></div>
+<div class="tips-featured-grid" id="featuredTips">
+<article class="tip-card"><span>PHYSICS</span><h3>Separate kVp from mAs</h3><p>Think energy and penetration for kVp; photon quantity for mAs. Build the relationship first, then add exceptions and digital-imaging nuance.</p></article>
+<article class="tip-card"><span>POSITIONING</span><h3>Evaluate before repeating</h3><p>Before a repeat, identify whether the problem is rotation, centering, anatomy coverage, motion, exposure, or artifact. Correct the cause—not just the appearance.</p></article>
+<article class="tip-card"><span>REGISTRY</span><h3>Review missed questions by concept</h3><p>Do not memorize the answer choice. Write the concept that made the other options wrong and revisit it 24–48 hours later.</p></article>
+</div>
+<div class="community-layout">
+<form class="panel community-compose" id="tipForm"><h3>Share a tip</h3><label>Title<input id="tipTitle" maxlength="180" placeholder="Short, useful headline" required=""/></label><label>Tip<textarea id="tipBody" maxlength="3000" placeholder="Share a practical study or clinical tip." required="" rows="4"></textarea></label><button class="btn" type="submit">Share Tip</button><p class="form-message" id="tipMessage" role="status"></p></form>
+<div><div class="community-filter"><strong>Community tips</strong><button class="text-btn" data-refresh-feed="tips-tricks">Refresh</button></div><div class="community-feed" id="tipsFeed"></div></div>
+</div>
+</section><section class="dashboard-view" id="forumView">
+<div class="content-toolbar"><div><p class="eyebrow">Current + past students</p><h2>Community Forum</h2><p>Ask questions, share experience, and learn from other students and graduates.</p></div><select id="forumFilter"><option value="all">All topics</option><option value="current-students">Current Students</option><option value="graduates">Graduates</option><option value="registry-prep">Registry Prep</option><option value="positioning">Positioning</option><option value="physics">Physics</option><option value="clinical">Clinical Questions</option><option value="general">General</option></select></div>
+<div class="community-layout">
+<form class="panel community-compose" id="forumForm"><h3>Start a discussion</h3><label>Topic<select id="forumCategory"><option value="general">General</option><option value="current-students">Current Students</option><option value="graduates">Graduates</option><option value="registry-prep">Registry Prep</option><option value="positioning">Positioning</option><option value="physics">Physics</option><option value="clinical">Clinical Questions</option></select></label><label>Title<input id="forumTitle" maxlength="180" placeholder="What would you like to discuss?" required=""/></label><label>Post<textarea id="forumBody" maxlength="5000" placeholder="Add enough detail for someone to help." required="" rows="5"></textarea></label><button class="btn" type="submit">Post Discussion</button><p class="form-message" id="forumMessage" role="status"></p></form>
+<div><div class="community-filter"><strong>Latest discussions</strong><button class="text-btn" data-refresh-feed="all">Refresh</button></div><div class="community-feed" id="forumFeed"></div></div>
+</div>
+</section></main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="cloud.js"></script><script src="access.js"></script>
+</body>
+</html>

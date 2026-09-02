@@ -1,0 +1,1 @@
+The cathode is the negative side of the x-ray tube. Its heated filament releases electrons by thermionic emission, and the focusing cup directs them toward the target. The anode is the positive side. It receives the electrons at the focal spot, where most energy becomes heat and a small amount becomes x-rays.

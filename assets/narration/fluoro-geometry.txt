@@ -1,0 +1,23 @@
+Fluoroscopy becomes easier to understand when you picture the geometry of the C-arm instead of memorizing isolated safety rules. In this lesson, we are going to focus on the X-ray tube, the patient, the detector, and where scatter goes.
+
+In a typical C-arm setup, the X-ray tube is on one side of the patient and the image receptor or flat-panel detector is on the opposite side. X-rays leave the tube, pass through the patient, and then reach the detector.
+
+The patient is the main source of scatter radiation in the room. When the primary beam interacts with tissue, especially through Compton interactions, scattered photons can travel in many directions. That is why staff position and distance matter.
+
+One of the most important practical rules is to keep the detector as close to the patient as reasonably possible. If the detector is moved farther away, magnification increases. Automatic exposure control may also increase system output to maintain image brightness or detector signal.
+
+At the same time, keep the X-ray tube as far from the patient as the equipment and procedure allow. Increasing source-to-skin distance can reduce skin entrance dose by spreading the beam over a larger area before it reaches the patient.
+
+Now think about which side of the C-arm is safer for staff. In many situations, scatter is greater on the tube side because that is where the primary beam first enters the patient and where more backscatter is produced. Standing on the detector side when practical can reduce occupational exposure.
+
+Collimation is another major dose-control tool. Tight collimation reduces the volume of tissue being irradiated. That lowers patient dose and reduces scatter, which can also improve image contrast.
+
+Pulsed fluoroscopy reduces the number of X-ray pulses compared with continuous fluoroscopy. Lower pulse rates can substantially reduce dose when the clinical task allows it. Last-image hold can also prevent unnecessary additional exposure.
+
+Magnification modes can increase dose because the system often increases output to maintain image quality. Use magnification only when it is clinically necessary.
+
+Clinical habit: before stepping on the fluoro pedal, check geometry. Detector close. Tube as far as practical. Collimation tight. Pulse rate appropriate. Staff as far away as practical and using shielding.
+
+Registry trap: do not confuse image receptor distance with source-to-image distance. The goal is detector close to the patient, not simply close to the tube.
+
+Make it click: geometry controls magnification, automatic exposure response, skin dose, and staff scatter. A few inches of positioning can make a meaningful difference.

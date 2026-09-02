@@ -1,0 +1,17 @@
+Radiation physics becomes much easier when you stop treating the X-ray tube like a black box. In this lesson, we are going to focus on one small part of the process: how electrons are released from the filament and prepared for the exposure.
+
+Start at the cathode. The cathode is the negative side of the X-ray tube, and it contains one or two tungsten filaments inside a focusing cup. The filament is a thin coil of tungsten wire. When the technologist selects an exposure, current flows through the filament circuit. That current causes the filament to heat. As the temperature rises, electrons in the tungsten atoms gain energy.
+
+Eventually, some of those electrons gain enough energy to escape from the surface of the filament. That release of electrons because of heat is called thermionic emission. The electrons do not immediately fly across the tube. Before the exposure begins, they gather in a cloud around the filament. This cloud is often called the space charge.
+
+The focusing cup surrounds the filament and is also negatively charged. Because like charges repel, the negative focusing cup pushes the negative electrons toward the center of the electron stream. This helps direct the electrons toward the focal spot on the anode instead of allowing them to spread out.
+
+Now connect this to tube current. Milliamperage, or mA, controls how much filament current is used and therefore how many electrons are available in the space charge. More filament heating generally means more electrons are released. When the exposure is made, those electrons can be accelerated toward the anode.
+
+There is one more idea that students often confuse with thermionic emission: the space charge effect. The electron cloud itself is negatively charged, so it can repel additional electrons that are trying to leave the filament. At lower kVp values, that cloud can limit tube current. Modern generators use circuitry to compensate for this effect so the selected mA remains more stable.
+
+Clinical connection: when you choose a higher mA station, you are not directly making each electron more energetic. You are mainly making more electrons available for the exposure. The energy of those electrons as they cross the tube is controlled mainly by kVp.
+
+Registry trap: thermionic emission is caused by heat. It is not caused by the anode pulling electrons out of the filament, and it is not the same as X-ray production. Thermionic emission happens first. X-ray production happens later, when accelerated electrons interact with the target.
+
+Make it click: heat releases the electrons, the focusing cup shapes the cloud, mA controls how many electrons are available, and kVp controls how strongly they are accelerated across the tube. If you can picture those four steps, the cathode becomes much easier to understand.

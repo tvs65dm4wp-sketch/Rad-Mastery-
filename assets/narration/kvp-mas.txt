@@ -1,0 +1,1 @@
+Think of kVp and mAs as two different controls. kVp primarily changes photon energy and penetration. mAs primarily changes the number of x-ray photons produced. Increasing mAs increases receptor exposure in a direct relationship. Changing kVp affects penetration and also influences receptor exposure, so technique changes should be made thoughtfully.

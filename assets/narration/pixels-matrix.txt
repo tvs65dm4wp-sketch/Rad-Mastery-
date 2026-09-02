@@ -1,0 +1,21 @@
+Digital imaging starts with a simple idea: the image is divided into tiny picture elements called pixels. But pixel size, matrix size, field of view, and spatial resolution are closely connected, so let’s build the relationship step by step.
+
+A matrix is the grid that contains the pixels. For example, a 2,000 by 2,000 matrix contains four million pixels. Each pixel stores a numerical value related to the signal detected from that small area.
+
+Now keep the field of view fixed. If you increase the matrix dimensions, you fit more pixels across the same physical area. That means each pixel becomes smaller.
+
+Smaller pixels can represent finer changes in anatomy, so they can support better spatial resolution. But this does not mean a bigger matrix automatically makes every image sharper. The detector itself has physical limits. Detector element size, sampling frequency, focal spot size, patient motion, geometric unsharpness, processing, and display resolution can all limit visible detail.
+
+Field of view matters too. If matrix size stays the same but you increase the field of view, each pixel must cover a larger physical area. That increases pixel size and can reduce spatial resolution.
+
+This relationship is often summarized as pixel size equals field of view divided by matrix dimension.
+
+Now think clinically. A hand radiograph requires excellent spatial detail because the anatomy is small and fine. A detector and technique that preserve detail are especially important. Motion, large OID, or a large focal spot can still blur the image even if the digital matrix is large.
+
+Bit depth is a different concept. Bit depth controls how many possible grayscale values can be assigned to each pixel. More bits mean more possible gray shades. Bit depth relates more to contrast resolution than spatial resolution.
+
+Registry trap: matrix size and pixel size are related, but they are not the same thing. At a fixed field of view, increasing the matrix makes pixels smaller. At a fixed matrix, increasing field of view makes pixels larger.
+
+Common mistake: do not say smaller pixels always guarantee a sharper image. They improve the sampling potential, but the entire imaging chain still matters.
+
+Make it click: the matrix tells you how many pixels fit across the image. The field of view tells you how much anatomy that matrix covers. Together, they determine pixel size. Pixel size helps determine how finely the image can sample spatial detail.

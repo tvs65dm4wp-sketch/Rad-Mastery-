@@ -1,0 +1,23 @@
+Portable chest radiography is one of the first situations where students realize that classroom positioning and real clinical work are not always the same. In this lesson, we are going to walk through a practical portable AP chest workflow.
+
+Start before you even enter the room. Review the order, indication, isolation status, and patient condition. Make sure you have the correct detector, clean equipment, lead markers, protective supplies, and any required isolation gear.
+
+At the bedside, identify the patient using two approved identifiers. Explain what you are doing, even if the patient is tired or critically ill. A short explanation improves cooperation and helps maintain patient dignity.
+
+For an AP portable chest, place the detector behind the patient's thorax. If the patient can sit upright, raise the head of the bed as much as clinically possible. Upright positioning helps demonstrate air-fluid levels and reduces vascular engorgement compared with a fully supine image.
+
+Center the patient without rotation. Check that the shoulders are at the same distance from the detector. Roll the shoulders forward if possible to move the scapulae laterally. Raise the chin so it does not project over the lung apices.
+
+The central ray is usually directed perpendicular to the detector, centered to the thorax around the level of T7. With portable imaging, landmarks can be harder to visualize, so use the inferior angle of the scapula and the approximate level of the lower chest as practical references.
+
+Collimate carefully. Include the apices and costophrenic angles. Avoid excessive field size because it increases scatter and patient dose.
+
+Exposure is made on full inspiration when possible. Give a clear instruction: take a deep breath in, hold it, and do not move.
+
+Now evaluate the image before leaving. Check patient identity and marker, lung inclusion, rotation, inspiration, penetration, motion, and lines or tubes if present. If there is a central line, endotracheal tube, chest tube, or other device, make sure the anatomy needed to assess its position is included.
+
+Clinical tip: do not rush out of the room after the exposure. A thirty-second image review can prevent a repeat trip and another patient exposure.
+
+Registry connection: portable AP chest images can magnify the heart compared with standard PA chest imaging because the heart is farther from the detector and the source-to-image distance may be shorter.
+
+Make it click: portable chest success comes from preparation, patient alignment, detector placement, careful collimation, inspiration, and a deliberate image review before you leave.

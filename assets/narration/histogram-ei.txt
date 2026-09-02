@@ -1,0 +1,19 @@
+Digital imaging can make exposure errors harder to recognize because the computer can make many images look acceptably bright. In this lesson, we are going to break down histograms and exposure indicators so you understand what the system is actually telling you.
+
+When the detector receives X-ray energy, it creates digital data. Different parts of the image receive different amounts of exposure. The computer organizes those signal values into a distribution called a histogram.
+
+Think of the histogram as a map of how many pixels fall into different exposure or signal ranges. The processing system analyzes that distribution and compares it with the expected pattern for the selected exam. It then applies processing, including a look-up table, or LUT, to create the displayed grayscale image.
+
+This is why correct exam selection and proper collimation matter. If the system analyzes anatomy it was not expecting, or if large unexposed areas are included, histogram recognition can be affected. Poor field recognition can lead to an image that is processed incorrectly even when the detector received enough radiation.
+
+Now consider the exposure indicator. The exposure indicator is a numerical value that gives information about the amount of exposure reaching the detector. Different manufacturers use different scales, so the direction of the number is not always the same. On one system, a higher value may mean more exposure. On another, a lower value may mean more exposure.
+
+The standardized deviation index, or DI, helps describe how far an exposure differs from a target exposure. A DI near zero means detector exposure is near the target. Positive values indicate exposure above target, while negative values indicate exposure below target.
+
+The key point is that exposure indicators help you detect exposure creep. Exposure creep occurs when technologists gradually use more technique than necessary because digital processing keeps the displayed image looking acceptable. If you only look at brightness, you may miss the fact that patient exposure is trending upward.
+
+Clinical connection: evaluate the entire image. Look at anatomy, positioning, motion, collimation, noise, artifacts, and the exposure indicator. A good-looking image with an excessively high detector exposure is not automatically a good exposure.
+
+Registry trap: postprocessing cannot restore anatomy that was clipped out, cannot remove true motion blur, and cannot make severe quantum noise disappear without tradeoffs. Digital processing is powerful, but it does not replace correct acquisition.
+
+Make it click: the histogram describes the distribution of image data, the LUT maps that data for display, and the exposure indicator tells you whether detector exposure was near the intended range.

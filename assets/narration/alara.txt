@@ -1,0 +1,1 @@
+ALARA means keeping radiation exposure as low as reasonably achievable while still obtaining the necessary diagnostic information. The three classic protection principles are time, distance, and shielding. Reduce unnecessary beam-on time, increase distance from the source of scatter, and use appropriate barriers or protective equipment according to policy.
